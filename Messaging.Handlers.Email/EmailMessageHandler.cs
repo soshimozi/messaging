@@ -31,7 +31,7 @@ namespace Messaging.Handlers.Email
 
                 // Init SmtpClient and send
                 var smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
-                var credentials = new System.Net.NetworkCredential("jiraagent", "fuckthis1");
+                var credentials = new System.Net.NetworkCredential("", "");
                 smtpClient.Credentials = credentials;
 
                 smtpClient.Send(mailMsg);
