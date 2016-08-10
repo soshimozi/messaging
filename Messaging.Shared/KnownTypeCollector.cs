@@ -21,7 +21,7 @@ namespace Messaging.Shared
         static MessageTypeCollector()
         {
             // TODO: get from config or inject somehow
-            Instance = new MessageTypeCollector(@"C:\Users\Monkey\AppData\Local\Temp\Messages");
+            Instance = new MessageTypeCollector(Config.GetPluginPath());
         }
 
         public MessageTypeCollector(string path = null)
